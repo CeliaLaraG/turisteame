@@ -1,0 +1,24 @@
+{
+  "name": "turisteame-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "celia",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index -e js,tpl"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "js-sha512": "^0.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.13",
+    "slugify": "^1.5.3",
+    "uid-generator": "^2.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
