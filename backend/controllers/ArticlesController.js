@@ -3,7 +3,7 @@ const express = require('express')
 const router = express.Router()
 const slugify = require('slugify')
 const articleModel = require('../models/ArticleModel')
-const authMiddleware = require('../modules/authenticator') //conecta con el middleware que nos permite limitar o dar acceso a áreas del proyecto
+// const authMiddleware = require('../modules/authenticator') //conecta con el middleware que nos permite limitar o dar acceso a áreas del proyecto
 
 
 
