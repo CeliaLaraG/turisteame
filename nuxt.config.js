@@ -1,4 +1,7 @@
 export default {
+  server: {
+    port: 8080
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'turisteame',
@@ -9,15 +12,17 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+      '~/assets/css/styles.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/api/index'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -25,12 +30,12 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    // https://go.nuxtjs.dev/buefy
+    'nuxt-buefy',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
@@ -43,10 +48,12 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      lang: 'es'
     }
   },
-
+  env: {
+    baseURL: 'https://turisteame.herokuapp.com/'
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
